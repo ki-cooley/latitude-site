@@ -46,50 +46,50 @@ export default function Page() {
     ];
 
     return (
-        <div className="min-h-screen bg-stone-50" data-oid="qrl86gl">
+        <div className="min-h-screen bg-amber-50" data-oid="qrl86gl">
             {/* Fixed Navigation */}
             <nav
-                className="fixed top-0 left-0 right-0 z-40 bg-stone-50/80 backdrop-blur-sm border-b border-stone-200/50"
+                className="fixed top-0 left-0 right-0 z-40 bg-amber-50/90 backdrop-blur-sm border-b border-amber-100"
                 data-oid="nav-header"
             >
                 <div
-                    className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+                    className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center"
                     data-oid="_lm:cn_"
                 >
                     <div
-                        className="text-2xl font-light tracking-wider text-stone-800"
+                        className="text-2xl font-display font-light tracking-wide text-amber-900"
                         data-oid="logo"
                     >
                         latitude
                     </div>
                     <div
-                        className="hidden md:flex space-x-8 text-sm font-light text-stone-600"
+                        className="hidden md:flex space-x-12 text-sm font-body text-amber-700"
                         data-oid="nav-links"
                     >
                         <a
                             href="#about"
-                            className="hover:text-stone-800 transition-colors"
+                            className="hover:text-violet-600 transition-colors"
                             data-oid="c_qqfrs"
                         >
                             About
                         </a>
                         <a
                             href="#gallery"
-                            className="hover:text-stone-800 transition-colors"
+                            className="hover:text-violet-600 transition-colors"
                             data-oid="ato0ss1"
                         >
                             Gallery
                         </a>
                         <a
                             href="#menu"
-                            className="hover:text-stone-800 transition-colors"
+                            className="hover:text-violet-600 transition-colors"
                             data-oid="4cpz8v9"
                         >
                             Menu
                         </a>
                         <a
                             href="#contact"
-                            className="hover:text-stone-800 transition-colors"
+                            className="hover:text-violet-600 transition-colors"
                             data-oid="i56e1.o"
                         >
                             Contact
@@ -109,20 +109,20 @@ export default function Page() {
                     }}
                     data-oid="hero-bg"
                 ></div>
-                <div className="absolute inset-0 bg-black/30" data-oid="hero-overlay"></div>
+                <div className="absolute inset-0 bg-amber-900/20" data-oid="hero-overlay"></div>
                 <div
                     className="relative z-10 h-full flex items-center justify-center text-center text-white"
                     data-oid="hero-content"
                 >
-                    <div className="max-w-2xl px-6" data-oid="hero-text">
+                    <div className="max-w-3xl px-8" data-oid="hero-text">
                         <h1
-                            className="text-6xl md:text-8xl font-light tracking-wider mb-6"
+                            className="text-7xl md:text-9xl font-display font-light tracking-wide mb-8"
                             data-oid="hero-title"
                         >
                             latitude
                         </h1>
                         <p
-                            className="text-xl md:text-2xl font-light tracking-wide opacity-90"
+                            className="text-xl md:text-2xl font-body font-light tracking-wide opacity-95"
                             data-oid="hero-subtitle"
                         >
                             An intimate culinary journey
@@ -132,18 +132,18 @@ export default function Page() {
             </section>
 
             {/* About Section */}
-            <section id="about" className="py-32 px-6" data-oid="about-section">
-                <div className="max-w-4xl mx-auto text-center" data-oid="about-content">
+            <section id="about" className="py-40 px-8" data-oid="about-section">
+                <div className="max-w-5xl mx-auto text-center" data-oid="about-content">
                     <h2
-                        className="text-4xl md:text-5xl font-light text-stone-800 mb-12 tracking-wide"
+                        className="text-5xl md:text-6xl font-display font-light text-amber-900 mb-20 tracking-wide"
                         data-oid="about-title"
                     >
                         Where stories unfold
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-16 items-center" data-oid="about-grid">
-                        <div className="space-y-6 text-left" data-oid="about-text">
+                    <div className="grid md:grid-cols-2 gap-24 items-center" data-oid="about-grid">
+                        <div className="space-y-8 text-left" data-oid="about-text">
                             <p
-                                className="text-lg text-stone-600 leading-relaxed font-light"
+                                className="text-lg text-amber-800 leading-relaxed font-body"
                                 data-oid="about-p1"
                             >
                                 Latitude is more than a supper club—it's a carefully curated
@@ -151,19 +151,27 @@ export default function Page() {
                                 an atmosphere of understated elegance.
                             </p>
                             <p
-                                className="text-lg text-stone-600 leading-relaxed font-light"
+                                className="text-lg text-amber-800 leading-relaxed font-body"
                                 data-oid="about-p2"
                             >
                                 Each evening, we welcome a select number of guests to share in our
                                 chef's interpretation of contemporary cuisine, paired with
                                 thoughtfully chosen wines and genuine hospitality.
                             </p>
+                            <div className="pt-6" data-oid="about-cta">
+                                <button
+                                    className="bg-violet-600 text-white px-8 py-3 font-body hover:bg-violet-700 transition-colors"
+                                    data-oid="kt1tls4"
+                                >
+                                    Reserve Your Table
+                                </button>
+                            </div>
                         </div>
                         <div className="relative" data-oid="about-image">
                             <img
                                 src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=800&fit=crop"
                                 alt="Chef preparing dishes"
-                                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                                className="w-full h-96 object-cover"
                                 data-oid="about-img"
                             />
                         </div>
@@ -172,16 +180,20 @@ export default function Page() {
             </section>
 
             {/* Gallery Section */}
-            <section id="gallery" className="py-32 px-6 bg-white" data-oid="gallery-section">
+            <section
+                id="gallery"
+                className="py-40 px-8 bg-white border-t border-amber-100"
+                data-oid="gallery-section"
+            >
                 <div className="max-w-7xl mx-auto" data-oid="gallery-content">
                     <h2
-                        className="text-4xl md:text-5xl font-light text-stone-800 mb-16 text-center tracking-wide"
+                        className="text-5xl md:text-6xl font-display font-light text-amber-900 mb-24 text-center tracking-wide"
                         data-oid="gallery-title"
                     >
                         Moments captured
                     </h2>
                     <div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
                         data-oid="gallery-grid"
                     >
                         {galleryImages.map((image, index) => (
@@ -192,7 +204,7 @@ export default function Page() {
                                 data-oid="gallery-item"
                             >
                                 <div
-                                    className="relative overflow-hidden rounded-sm"
+                                    className="relative overflow-hidden"
                                     data-oid="gallery-item-container"
                                 >
                                     <img
@@ -203,7 +215,7 @@ export default function Page() {
                                     />
 
                                     <div
-                                        className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"
+                                        className="absolute inset-0 bg-violet-600/0 group-hover:bg-violet-600/5 transition-colors duration-300"
                                         data-oid="gallery-overlay"
                                     ></div>
                                 </div>
@@ -214,25 +226,29 @@ export default function Page() {
             </section>
 
             {/* Menu Highlights */}
-            <section id="menu" className="py-32 px-6 bg-stone-100" data-oid="menu-section">
-                <div className="max-w-4xl mx-auto text-center" data-oid="menu-content">
+            <section
+                id="menu"
+                className="py-40 px-8 bg-amber-25 border-t border-amber-100"
+                data-oid="menu-section"
+            >
+                <div className="max-w-5xl mx-auto text-center" data-oid="menu-content">
                     <h2
-                        className="text-4xl md:text-5xl font-light text-stone-800 mb-16 tracking-wide"
+                        className="text-5xl md:text-6xl font-display font-light text-amber-900 mb-24 tracking-wide"
                         data-oid="menu-title"
                     >
                         Seasonal offerings
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-16" data-oid="menu-grid">
-                        <div className="text-left space-y-8" data-oid="menu-left">
+                    <div className="grid md:grid-cols-2 gap-20" data-oid="menu-grid">
+                        <div className="text-left space-y-12" data-oid="menu-left">
                             <div data-oid="menu-item-1">
                                 <h3
-                                    className="text-xl font-light text-stone-800 mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="menu-item-title-1"
                                 >
                                     Tasting Menu
                                 </h3>
                                 <p
-                                    className="text-stone-600 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="menu-item-desc-1"
                                 >
                                     Seven courses celebrating the season's finest ingredients, each
@@ -241,13 +257,13 @@ export default function Page() {
                             </div>
                             <div data-oid="menu-item-2">
                                 <h3
-                                    className="text-xl font-light text-stone-800 mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="menu-item-title-2"
                                 >
                                     Wine Pairings
                                 </h3>
                                 <p
-                                    className="text-stone-600 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="menu-item-desc-2"
                                 >
                                     Carefully selected wines from small producers, chosen to
@@ -255,16 +271,16 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-left space-y-8" data-oid="menu-right">
+                        <div className="text-left space-y-12" data-oid="menu-right">
                             <div data-oid="menu-item-3">
                                 <h3
-                                    className="text-xl font-light text-stone-800 mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="menu-item-title-3"
                                 >
                                     Private Events
                                 </h3>
                                 <p
-                                    className="text-stone-600 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="menu-item-desc-3"
                                 >
                                     Intimate gatherings for special occasions, with bespoke menus
@@ -273,13 +289,13 @@ export default function Page() {
                             </div>
                             <div data-oid="menu-item-4">
                                 <h3
-                                    className="text-xl font-light text-stone-800 mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="menu-item-title-4"
                                 >
                                     Chef's Table
                                 </h3>
                                 <p
-                                    className="text-stone-600 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="menu-item-desc-4"
                                 >
                                     An exclusive experience at the kitchen counter, witnessing the
@@ -294,27 +310,27 @@ export default function Page() {
             {/* Contact Section */}
             <section
                 id="contact"
-                className="py-32 px-6 bg-stone-800 text-white"
+                className="py-40 px-8 bg-white border-t border-amber-100"
                 data-oid="contact-section"
             >
-                <div className="max-w-4xl mx-auto text-center" data-oid="contact-content">
+                <div className="max-w-5xl mx-auto text-center" data-oid="contact-content">
                     <h2
-                        className="text-4xl md:text-5xl font-light mb-16 tracking-wide"
+                        className="text-5xl md:text-6xl font-display font-light text-amber-900 mb-24 tracking-wide"
                         data-oid="contact-title"
                     >
                         Join us
                     </h2>
-                    <div className="grid md:grid-cols-2 gap-16" data-oid="contact-grid">
-                        <div className="text-left space-y-6" data-oid="contact-info">
+                    <div className="grid md:grid-cols-2 gap-20" data-oid="contact-grid">
+                        <div className="text-left space-y-10" data-oid="contact-info">
                             <div data-oid="contact-address">
                                 <h3
-                                    className="text-xl font-light mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="contact-address-title"
                                 >
                                     Location
                                 </h3>
                                 <p
-                                    className="text-stone-300 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="contact-address-text"
                                 >
                                     1847 Union Street
@@ -324,13 +340,13 @@ export default function Page() {
                             </div>
                             <div data-oid="contact-hours">
                                 <h3
-                                    className="text-xl font-light mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="contact-hours-title"
                                 >
                                     Hours
                                 </h3>
                                 <p
-                                    className="text-stone-300 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed"
                                     data-oid="contact-hours-text"
                                 >
                                     Tuesday - Saturday
@@ -339,26 +355,32 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="text-left space-y-6" data-oid="contact-booking">
+                        <div className="text-left space-y-10" data-oid="contact-booking">
                             <div data-oid="contact-reservations">
                                 <h3
-                                    className="text-xl font-light mb-2"
+                                    className="text-2xl font-display font-light text-amber-900 mb-4"
                                     data-oid="contact-reservations-title"
                                 >
                                     Reservations
                                 </h3>
                                 <p
-                                    className="text-stone-300 font-light leading-relaxed"
+                                    className="text-amber-800 font-body leading-relaxed mb-6"
                                     data-oid="contact-reservations-text"
                                 >
                                     hello@latitude-sf.com
                                     <br data-oid="h8reapl" />
                                     (415) 555-0147
                                 </p>
+                                <button
+                                    className="border border-violet-600 text-violet-600 px-6 py-2 font-body hover:bg-violet-600 hover:text-white transition-colors"
+                                    data-oid=":572vts"
+                                >
+                                    Call Now
+                                </button>
                             </div>
                             <div data-oid="contact-note">
                                 <p
-                                    className="text-stone-400 font-light text-sm leading-relaxed"
+                                    className="text-amber-700 font-body text-sm leading-relaxed"
                                     data-oid="contact-note-text"
                                 >
                                     Reservations are required and limited to 24 guests per evening.
@@ -372,11 +394,11 @@ export default function Page() {
 
             {/* Footer */}
             <footer
-                className="py-12 px-6 bg-stone-900 text-stone-400 text-center"
+                className="py-16 px-8 bg-amber-50 border-t border-amber-100 text-center"
                 data-oid="footer"
             >
-                <div className="max-w-4xl mx-auto" data-oid="footer-content">
-                    <p className="text-sm font-light" data-oid="footer-text">
+                <div className="max-w-5xl mx-auto" data-oid="footer-content">
+                    <p className="text-sm font-body text-amber-700" data-oid="footer-text">
                         © 2024 Latitude Supper Club. All rights reserved.
                     </p>
                 </div>
