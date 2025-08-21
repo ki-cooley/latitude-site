@@ -15,35 +15,42 @@ export default function Page() {
     const galleryImages = [
         {
             id: 1,
-            src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=1200&fit=crop',
+            src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1200&h=600&fit=crop',
             alt: 'Intimate dining atmosphere',
+            aspectRatio: 'aspect-[2/1]', // wide
         },
         {
             id: 2,
-            src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop',
+            src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=600&h=900&fit=crop',
             alt: 'Artisanal dish presentation',
+            aspectRatio: 'aspect-[2/3]', // tall
         },
         {
             id: 3,
-            src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=1000&fit=crop',
+            src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=1200&h=700&fit=crop',
             alt: 'Chef at work',
+            aspectRatio: 'aspect-[12/7]', // wide
         },
         {
             id: 4,
-            src: 'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&h=600&fit=crop',
+            src: 'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=700&h=1000&fit=crop',
             alt: 'Wine selection',
+            aspectRatio: 'aspect-[7/10]', // tall
         },
         {
             id: 5,
-            src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=800&fit=crop',
+            src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&h=600&fit=crop',
             alt: 'Seasonal ingredients',
+            aspectRatio: 'aspect-[2/1]', // wide
         },
         {
             id: 6,
             src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=1200&fit=crop',
             alt: 'Evening ambiance',
+            aspectRatio: 'aspect-[2/3]', // tall
         },
     ];
+=======
 
     return (
         <div className="min-h-screen bg-amber-50" data-oid="qrl86gl">
