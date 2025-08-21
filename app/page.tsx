@@ -1,212 +1,409 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Page() {
     const [selectedImage, setSelectedImage] = useState(null);
+    const [scrollY, setScrollY] = useState(0);
 
-    const images = [
+    useEffect(() => {
+        const handleScroll = () => setScrollY(window.scrollY);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const galleryImages = [
         {
             id: 1,
-            src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop',
-            alt: 'Abstract pink composition',
-            aspect: 'aspect-[4/3]',
+            src: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=1200&fit=crop',
+            alt: 'Intimate dining atmosphere',
         },
         {
             id: 2,
-            src: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=600&fit=crop',
-            alt: 'Hand gesture portrait',
-            aspect: 'aspect-[2/3]',
+            src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=600&fit=crop',
+            alt: 'Artisanal dish presentation',
         },
         {
             id: 3,
-            src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=500&fit=crop',
-            alt: 'Urban architecture',
-            aspect: 'aspect-[4/5]',
+            src: 'https://images.unsplash.com/photo-1559339352-11d035aa65de?w=800&h=1000&fit=crop',
+            alt: 'Chef at work',
         },
         {
             id: 4,
-            src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop',
-            alt: 'Street photography',
-            aspect: 'aspect-[4/3]',
+            src: 'https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?w=800&h=600&fit=crop',
+            alt: 'Wine selection',
         },
         {
             id: 5,
-            src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop',
-            alt: 'Neon lights',
-            aspect: 'aspect-square',
+            src: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=800&fit=crop',
+            alt: 'Seasonal ingredients',
         },
         {
             id: 6,
-            src: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=300&fit=crop',
-            alt: 'Los Angeles street',
-            aspect: 'aspect-[4/3]',
-        },
-        {
-            id: 7,
-            src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=500&fit=crop',
-            alt: 'Industrial workspace',
-            aspect: 'aspect-[4/5]',
-        },
-        {
-            id: 8,
-            src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=400&fit=crop',
-            alt: 'Director chair',
-            aspect: 'aspect-square',
-        },
-        {
-            id: 9,
-            src: 'https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=300&fit=crop',
-            alt: 'Vintage t-shirt',
-            aspect: 'aspect-[4/3]',
+            src: 'https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&h=1200&fit=crop',
+            alt: 'Evening ambiance',
         },
     ];
 
     return (
-        <div className="min-h-screen bg-gray-50 flex" data-oid="qrl86gl">
-            {/* Left Sidebar */}
-            <div
-                className="w-80 bg-white p-8 flex flex-col justify-between border-r border-gray-200"
-                data-oid="wh9actw"
+        <div className="min-h-screen bg-stone-50" data-oid="qrl86gl">
+            {/* Fixed Navigation */}
+            <nav
+                className="fixed top-0 left-0 right-0 z-40 bg-stone-50/80 backdrop-blur-sm border-b border-stone-200/50"
+                data-oid="nav-header"
             >
-                <div data-oid="ow544:s">
-                    {/* Logo/Name */}
-                    <div className="mb-8" data-oid="yal:uqi">
-                        <div className="flex items-center mb-2" data-oid="e2n_f5f">
-                            <div
-                                className="w-2 h-2 bg-black rounded-full mr-2"
-                                data-oid="9eojom7"
-                            ></div>
-                            <div
-                                className="w-2 h-2 bg-black rounded-full mr-2"
-                                data-oid=":gmzhe3"
-                            ></div>
-                            <div className="w-2 h-2 bg-black rounded-full" data-oid="k.i4dxe"></div>
-                        </div>
-                        <h1 className="text-xl font-medium text-black mb-1" data-oid="n:4yyfe">
-                            Mark O. Davis
-                        </h1>
-                        <p className="text-sm text-gray-500" data-oid="s0jf9pd">
-                            Los Angeles • Writer
-                        </p>
+                <div
+                    className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+                    data-oid="_lm:cn_"
+                >
+                    <div
+                        className="text-2xl font-light tracking-wider text-stone-800"
+                        data-oid="logo"
+                    >
+                        latitude
                     </div>
-
-                    {/* Bio */}
-                    <div className="mb-12" data-oid="o073tzk">
-                        <p
-                            className="text-sm text-gray-700 leading-relaxed mb-6"
-                            data-oid="czv2u-."
-                        >
-                            I have a passion for writing and creating images that capture the beauty
-                            of moments.
-                        </p>
-                    </div>
-
-                    {/* Navigation */}
-                    <nav className="space-y-3" data-oid="ceorn3i">
+                    <div
+                        className="hidden md:flex space-x-8 text-sm font-light text-stone-600"
+                        data-oid="nav-links"
+                    >
                         <a
-                            href="#"
-                            className="block text-sm text-gray-700 hover:text-black transition-colors"
-                            data-oid="8cll0le"
-                        >
-                            Photos
-                        </a>
-                        <a
-                            href="#"
-                            className="block text-sm text-gray-700 hover:text-black transition-colors"
-                            data-oid="b1eruy2"
+                            href="#about"
+                            className="hover:text-stone-800 transition-colors"
+                            data-oid="c_qqfrs"
                         >
                             About
                         </a>
                         <a
-                            href="#"
-                            className="block text-sm text-gray-700 hover:text-black transition-colors"
-                            data-oid="gozvd2."
+                            href="#gallery"
+                            className="hover:text-stone-800 transition-colors"
+                            data-oid="ato0ss1"
                         >
-                            Journal
+                            Gallery
                         </a>
                         <a
-                            href="#"
-                            className="block text-sm text-gray-700 hover:text-black transition-colors"
-                            data-oid="ga0y2a8"
+                            href="#menu"
+                            className="hover:text-stone-800 transition-colors"
+                            data-oid="4cpz8v9"
+                        >
+                            Menu
+                        </a>
+                        <a
+                            href="#contact"
+                            className="hover:text-stone-800 transition-colors"
+                            data-oid="i56e1.o"
                         >
                             Contact
                         </a>
-                    </nav>
-
-                    {/* Resume Button */}
-                    <div className="mt-8" data-oid="sq_oazo">
-                        <button
-                            className="bg-black text-white px-4 py-2 text-sm hover:bg-gray-800 transition-colors"
-                            data-oid="_87nsd_"
-                        >
-                            Resume
-                        </button>
                     </div>
                 </div>
+            </nav>
 
-                {/* Footer */}
-                <div className="text-xs text-gray-400" data-oid="9wh-xr-">
-                    © 2024 • Template by GrayGrids
+            {/* Hero Section */}
+            <section className="relative h-screen overflow-hidden" data-oid="hero-section">
+                <div
+                    className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundImage:
+                            'url(https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&h=1080&fit=crop)',
+                        transform: `translateY(${scrollY * 0.5}px)`,
+                    }}
+                    data-oid="hero-bg"
+                ></div>
+                <div className="absolute inset-0 bg-black/30" data-oid="hero-overlay"></div>
+                <div
+                    className="relative z-10 h-full flex items-center justify-center text-center text-white"
+                    data-oid="hero-content"
+                >
+                    <div className="max-w-2xl px-6" data-oid="hero-text">
+                        <h1
+                            className="text-6xl md:text-8xl font-light tracking-wider mb-6"
+                            data-oid="hero-title"
+                        >
+                            latitude
+                        </h1>
+                        <p
+                            className="text-xl md:text-2xl font-light tracking-wide opacity-90"
+                            data-oid="hero-subtitle"
+                        >
+                            An intimate culinary journey
+                        </p>
+                    </div>
                 </div>
-            </div>
+            </section>
 
-            {/* Main Content Area */}
-            <div className="flex-1 p-8" data-oid="tbg1dzz">
-                <div className="max-w-6xl mx-auto" data-oid="h9j25r6">
-                    {/* Masonry Grid */}
-                    <div className="columns-2 lg:columns-3 gap-6 space-y-6" data-oid="0.id5pe">
-                        {images.map((image, index) => (
+            {/* About Section */}
+            <section id="about" className="py-32 px-6" data-oid="about-section">
+                <div className="max-w-4xl mx-auto text-center" data-oid="about-content">
+                    <h2
+                        className="text-4xl md:text-5xl font-light text-stone-800 mb-12 tracking-wide"
+                        data-oid="about-title"
+                    >
+                        Where stories unfold
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-16 items-center" data-oid="about-grid">
+                        <div className="space-y-6 text-left" data-oid="about-text">
+                            <p
+                                className="text-lg text-stone-600 leading-relaxed font-light"
+                                data-oid="about-p1"
+                            >
+                                Latitude is more than a supper club—it's a carefully curated
+                                experience where seasonal ingredients meet innovative techniques in
+                                an atmosphere of understated elegance.
+                            </p>
+                            <p
+                                className="text-lg text-stone-600 leading-relaxed font-light"
+                                data-oid="about-p2"
+                            >
+                                Each evening, we welcome a select number of guests to share in our
+                                chef's interpretation of contemporary cuisine, paired with
+                                thoughtfully chosen wines and genuine hospitality.
+                            </p>
+                        </div>
+                        <div className="relative" data-oid="about-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&h=800&fit=crop"
+                                alt="Chef preparing dishes"
+                                className="w-full h-96 object-cover rounded-sm shadow-lg"
+                                data-oid="about-img"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Gallery Section */}
+            <section id="gallery" className="py-32 px-6 bg-white" data-oid="gallery-section">
+                <div className="max-w-7xl mx-auto" data-oid="gallery-content">
+                    <h2
+                        className="text-4xl md:text-5xl font-light text-stone-800 mb-16 text-center tracking-wide"
+                        data-oid="gallery-title"
+                    >
+                        Moments captured
+                    </h2>
+                    <div
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                        data-oid="gallery-grid"
+                    >
+                        {galleryImages.map((image, index) => (
                             <div
                                 key={image.id}
-                                className="break-inside-avoid cursor-pointer group"
+                                className="group cursor-pointer"
                                 onClick={() => setSelectedImage(image)}
-                                data-oid="fkd13bx"
+                                data-oid="gallery-item"
                             >
                                 <div
-                                    className="relative overflow-hidden bg-gray-200 hover:shadow-lg transition-shadow duration-300"
-                                    data-oid="opdvxkf"
+                                    className="relative overflow-hidden rounded-sm"
+                                    data-oid="gallery-item-container"
                                 >
                                     <img
                                         src={image.src}
                                         alt={image.alt}
-                                        className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300"
-                                        style={{
-                                            aspectRatio:
-                                                index % 3 === 0
-                                                    ? '4/5'
-                                                    : index % 3 === 1
-                                                      ? '3/4'
-                                                      : '1/1',
-                                        }}
-                                        data-oid="coejsxo"
+                                        className="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+                                        data-oid="gallery-img"
                                     />
+
+                                    <div
+                                        className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300"
+                                        data-oid="gallery-overlay"
+                                    ></div>
                                 </div>
                             </div>
                         ))}
                     </div>
                 </div>
-            </div>
+            </section>
+
+            {/* Menu Highlights */}
+            <section id="menu" className="py-32 px-6 bg-stone-100" data-oid="menu-section">
+                <div className="max-w-4xl mx-auto text-center" data-oid="menu-content">
+                    <h2
+                        className="text-4xl md:text-5xl font-light text-stone-800 mb-16 tracking-wide"
+                        data-oid="menu-title"
+                    >
+                        Seasonal offerings
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-16" data-oid="menu-grid">
+                        <div className="text-left space-y-8" data-oid="menu-left">
+                            <div data-oid="menu-item-1">
+                                <h3
+                                    className="text-xl font-light text-stone-800 mb-2"
+                                    data-oid="menu-item-title-1"
+                                >
+                                    Tasting Menu
+                                </h3>
+                                <p
+                                    className="text-stone-600 font-light leading-relaxed"
+                                    data-oid="menu-item-desc-1"
+                                >
+                                    Seven courses celebrating the season's finest ingredients, each
+                                    dish a story of place and time.
+                                </p>
+                            </div>
+                            <div data-oid="menu-item-2">
+                                <h3
+                                    className="text-xl font-light text-stone-800 mb-2"
+                                    data-oid="menu-item-title-2"
+                                >
+                                    Wine Pairings
+                                </h3>
+                                <p
+                                    className="text-stone-600 font-light leading-relaxed"
+                                    data-oid="menu-item-desc-2"
+                                >
+                                    Carefully selected wines from small producers, chosen to
+                                    complement each course perfectly.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="text-left space-y-8" data-oid="menu-right">
+                            <div data-oid="menu-item-3">
+                                <h3
+                                    className="text-xl font-light text-stone-800 mb-2"
+                                    data-oid="menu-item-title-3"
+                                >
+                                    Private Events
+                                </h3>
+                                <p
+                                    className="text-stone-600 font-light leading-relaxed"
+                                    data-oid="menu-item-desc-3"
+                                >
+                                    Intimate gatherings for special occasions, with bespoke menus
+                                    crafted for your celebration.
+                                </p>
+                            </div>
+                            <div data-oid="menu-item-4">
+                                <h3
+                                    className="text-xl font-light text-stone-800 mb-2"
+                                    data-oid="menu-item-title-4"
+                                >
+                                    Chef's Table
+                                </h3>
+                                <p
+                                    className="text-stone-600 font-light leading-relaxed"
+                                    data-oid="menu-item-desc-4"
+                                >
+                                    An exclusive experience at the kitchen counter, witnessing the
+                                    artistry behind each dish.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Contact Section */}
+            <section
+                id="contact"
+                className="py-32 px-6 bg-stone-800 text-white"
+                data-oid="contact-section"
+            >
+                <div className="max-w-4xl mx-auto text-center" data-oid="contact-content">
+                    <h2
+                        className="text-4xl md:text-5xl font-light mb-16 tracking-wide"
+                        data-oid="contact-title"
+                    >
+                        Join us
+                    </h2>
+                    <div className="grid md:grid-cols-2 gap-16" data-oid="contact-grid">
+                        <div className="text-left space-y-6" data-oid="contact-info">
+                            <div data-oid="contact-address">
+                                <h3
+                                    className="text-xl font-light mb-2"
+                                    data-oid="contact-address-title"
+                                >
+                                    Location
+                                </h3>
+                                <p
+                                    className="text-stone-300 font-light leading-relaxed"
+                                    data-oid="contact-address-text"
+                                >
+                                    1847 Union Street
+                                    <br data-oid="esia-qi" />
+                                    San Francisco, CA 94123
+                                </p>
+                            </div>
+                            <div data-oid="contact-hours">
+                                <h3
+                                    className="text-xl font-light mb-2"
+                                    data-oid="contact-hours-title"
+                                >
+                                    Hours
+                                </h3>
+                                <p
+                                    className="text-stone-300 font-light leading-relaxed"
+                                    data-oid="contact-hours-text"
+                                >
+                                    Tuesday - Saturday
+                                    <br data-oid="34krl27" />
+                                    6:00 PM - 10:00 PM
+                                </p>
+                            </div>
+                        </div>
+                        <div className="text-left space-y-6" data-oid="contact-booking">
+                            <div data-oid="contact-reservations">
+                                <h3
+                                    className="text-xl font-light mb-2"
+                                    data-oid="contact-reservations-title"
+                                >
+                                    Reservations
+                                </h3>
+                                <p
+                                    className="text-stone-300 font-light leading-relaxed"
+                                    data-oid="contact-reservations-text"
+                                >
+                                    hello@latitude-sf.com
+                                    <br data-oid="h8reapl" />
+                                    (415) 555-0147
+                                </p>
+                            </div>
+                            <div data-oid="contact-note">
+                                <p
+                                    className="text-stone-400 font-light text-sm leading-relaxed"
+                                    data-oid="contact-note-text"
+                                >
+                                    Reservations are required and limited to 24 guests per evening.
+                                    We recommend booking 2-3 weeks in advance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer
+                className="py-12 px-6 bg-stone-900 text-stone-400 text-center"
+                data-oid="footer"
+            >
+                <div className="max-w-4xl mx-auto" data-oid="footer-content">
+                    <p className="text-sm font-light" data-oid="footer-text">
+                        © 2024 Latitude Supper Club. All rights reserved.
+                    </p>
+                </div>
+            </footer>
 
             {/* Image Modal */}
             {selectedImage && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 p-8"
+                    className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-8"
                     onClick={() => setSelectedImage(null)}
-                    data-oid="697rgb8"
+                    data-oid="modal"
                 >
-                    <div className="relative max-w-4xl max-h-full" data-oid="i2quvym">
+                    <div className="relative max-w-5xl max-h-full" data-oid="modal-content">
                         <img
                             src={selectedImage.src}
                             alt={selectedImage.alt}
-                            className="max-w-full max-h-full object-contain"
-                            data-oid="d97kl1q"
+                            className="max-w-full max-h-full object-contain rounded-sm"
+                            data-oid="modal-img"
                         />
 
                         <button
-                            className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300"
-                            onClick={() => setSelectedImage(null)}
-                            data-oid="wlhe921"
+                            className="absolute top-4 right-4 text-white text-3xl hover:text-stone-300 transition-colors"
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                setSelectedImage(null);
+                            }}
+                            data-oid="modal-close"
                         >
                             ×
                         </button>
