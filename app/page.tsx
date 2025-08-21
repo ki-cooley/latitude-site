@@ -101,24 +101,39 @@ export default function Page() {
                     }}
                     data-oid="hero-bg"
                 ></div>
-                <div className="absolute inset-0 bg-amber-900/20" data-oid="hero-overlay"></div>
+                <div
+                    className="absolute inset-0 bg-gradient-to-br from-blue-600/8 to-purple-600/12"
+                    data-oid="hero-overlay"
+                ></div>
                 <div
                     className="relative z-10 h-full flex items-center justify-center text-center text-white"
                     data-oid="hero-content"
                 >
-                    <div className="max-w-3xl px-8" data-oid="hero-text">
+                    <div className="max-w-2xl px-8" data-oid="hero-text">
+                        <p
+                            className="text-xs font-body font-medium uppercase tracking-widest mb-6 opacity-90"
+                            data-oid="hero-microline"
+                        >
+                            Seasonal Dinners in NYC
+                        </p>
                         <h1
-                            className="text-7xl md:text-9xl font-display font-light tracking-wide mb-8"
+                            className="text-7xl md:text-8xl font-display font-light tracking-wide mb-6"
                             data-oid="hero-title"
                         >
-                            latitude
+                            Latitude
                         </h1>
                         <p
-                            className="text-xl md:text-2xl font-body font-light tracking-wide opacity-95"
+                            className="text-lg md:text-xl font-body font-light tracking-wide opacity-80 mb-12"
                             data-oid="hero-subtitle"
                         >
-                            An intimate culinary journey
+                            8 seats • ingredient-driven • wine-friendly
                         </p>
+                        <button
+                            className="bg-violet-600 text-white px-10 py-4 font-body text-lg hover:bg-violet-700 transition-colors"
+                            data-oid="hero-cta"
+                        >
+                            Join Waitlist
+                        </button>
                     </div>
                 </div>
             </section>
