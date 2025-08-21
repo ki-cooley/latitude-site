@@ -47,56 +47,48 @@ export default function Page() {
 
     return (
         <div className="min-h-screen bg-amber-50" data-oid="qrl86gl">
-            {/* Fixed Navigation */}
-            <nav
-                className="fixed top-0 left-0 right-0 z-40 bg-amber-50/90 backdrop-blur-sm border-b border-amber-100"
-                data-oid="nav-header"
+            {/* Sticky Header */}
+            <header
+                className="sticky top-0 left-0 right-0 z-40 bg-amber-50/80 backdrop-blur-md border-b border-amber-100"
+                data-oid="sticky-header"
             >
                 <div
-                    className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center"
-                    data-oid="_lm:cn_"
+                    className="max-w-[1040px] mx-auto px-8 py-4 flex justify-between items-center"
+                    data-oid="header-container"
                 >
-                    <div
-                        className="text-2xl font-display font-light tracking-wide text-amber-900"
-                        data-oid="logo"
-                    >
-                        latitude
+                    <div className="flex items-center space-x-2" data-oid="logo-container">
+                        <div
+                            className="text-2xl font-display font-light tracking-wide text-amber-900"
+                            data-oid="wordmark"
+                        >
+                            latitude
+                        </div>
+                        <svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="1.5"
+                            className="text-amber-700"
+                            data-oid="compass-icon"
+                        >
+                            <circle cx="12" cy="12" r="10" data-oid=".b01lh." />
+                            <polygon
+                                points="16.24,7.76 14.12,14.12 7.76,16.24 9.88,9.88 16.24,7.76"
+                                data-oid="mn6fgpm"
+                            />
+                        </svg>
                     </div>
-                    <div
-                        className="hidden md:flex space-x-12 text-sm font-body text-amber-700"
-                        data-oid="nav-links"
+                    <a
+                        href="#join"
+                        className="border border-violet-600 text-violet-600 px-6 py-2 text-sm font-body hover:bg-violet-600 hover:text-white transition-colors"
+                        data-oid="join-waitlist-btn"
                     >
-                        <a
-                            href="#about"
-                            className="hover:text-violet-600 transition-colors"
-                            data-oid="c_qqfrs"
-                        >
-                            About
-                        </a>
-                        <a
-                            href="#gallery"
-                            className="hover:text-violet-600 transition-colors"
-                            data-oid="ato0ss1"
-                        >
-                            Gallery
-                        </a>
-                        <a
-                            href="#menu"
-                            className="hover:text-violet-600 transition-colors"
-                            data-oid="4cpz8v9"
-                        >
-                            Menu
-                        </a>
-                        <a
-                            href="#contact"
-                            className="hover:text-violet-600 transition-colors"
-                            data-oid="i56e1.o"
-                        >
-                            Contact
-                        </a>
-                    </div>
+                        Join Waitlist
+                    </a>
                 </div>
-            </nav>
+            </header>
 
             {/* Hero Section */}
             <section className="relative h-screen overflow-hidden" data-oid="hero-section">
