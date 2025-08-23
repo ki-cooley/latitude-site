@@ -1,17 +1,1 @@
-{
-  "framework": "nextjs",
-  "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "installCommand": "npm install",
-  "functions": {
-    "app/**/*.{js,ts,tsx}": {
-      "runtime": "@vercel/node@2"
-    }
-  },
-  "rewrites": [
-    {
-      "source": "/((?!api/).*)",
-      "destination": "/index.html"
-    }
-  ]
-}
+{}
