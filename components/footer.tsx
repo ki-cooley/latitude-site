@@ -17,13 +17,13 @@ export function Footer() {
                             rel="noopener noreferrer"
                             className="text-sm text-cobalt-blue hover:text-cobalt-blue/80 transition-colors"
                         >
-                            @latitude.nyc
+                            @latitude.ny
                         </a>
                         <a
                             href="mailto:hello@latitude.nyc"
                             className="text-sm text-cobalt-blue hover:text-cobalt-blue/80 transition-colors"
                         >
-                            hello@latitude.nyc
+                            latitude40ny@gmail.com
                         </a>
                     </div>
                 </div>

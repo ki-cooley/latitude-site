@@ -208,7 +208,7 @@ export function MasonryGrid() {
                     columnWidth: columns === 2 ? 352 : 320,
                     gutter: 56, // maximum spacing to prevent overlap
                     fitWidth: true,
-                    transitionDuration: 0, // we handle animations ourselves
+                    transitionDuration: '0s', // we handle animations ourselves
                 });
 
                 // layout after images load

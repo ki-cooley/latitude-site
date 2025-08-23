@@ -44,8 +44,6 @@ const config: Config = {
                     {
                         lineHeight: '1.4',
                         letterSpacing: '0.14em',
-                        textTransform: 'uppercase',
-                        fontVariant: 'small-caps',
                     },
                 ],
             },
@@ -103,10 +101,7 @@ const config: Config = {
                     DEFAULT: 'hsl(var(--secondary))',
                     foreground: 'hsl(var(--secondary-foreground))',
                 },
-                muted: {
-                    DEFAULT: 'hsl(var(--muted))',
-                    foreground: 'hsl(var(--muted-foreground))',
-                },
+
                 accent: {
                     DEFAULT: 'hsl(var(--accent))',
                     foreground: 'hsl(var(--accent-foreground))',
