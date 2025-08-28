@@ -12,7 +12,7 @@ export function Footer() {
                     {/* Right side - Contact */}
                     <div className="flex flex-col items-center md:items-end gap-2">
                         <a
-                            href="https://instagram.com/latitude.nyc"
+                            href="https://instagram.com/latitude.ny"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-sm text-cobalt-blue hover:text-cobalt-blue/80 transition-colors"
@@ -20,7 +20,7 @@ export function Footer() {
                             @latitude.ny
                         </a>
                         <a
-                            href="mailto:hello@latitude.nyc"
+                            href="mailto:latitude40ny@gmail.com"
                             className="text-sm text-cobalt-blue hover:text-cobalt-blue/80 transition-colors"
                         >
                             latitude40ny@gmail.com
