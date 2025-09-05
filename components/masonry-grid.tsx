@@ -62,9 +62,9 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'Next Dinner',
             items: [
-                'Date: Saturday, August 30th, 2025',
-                'Theme: "Summer Abundance"',
-                'Interested? <a href="https://lu.ma/qh4pf4r9" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
+                'Date: Saturday, October 11th, 2025',
+                'Theme: "Cusp of Autumn"',
+                'Interested? <a href="https://luma.com/qg4qlcxi" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
             ],
         },
     },
