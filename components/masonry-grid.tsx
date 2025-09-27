@@ -103,7 +103,7 @@ const masonryItems: MasonryItem[] = [
             title: 'What To Expect',
             items: [
                 'Seasonal tasting, six to eight courses, meticulously paired wines',
-                "The nuance and refinement of restarurant cooking; the warmth and hospitality of a friend's dinner party",
+                "The nuance and refinement of restaurant cooking; the warmth and hospitality of a friend's dinner party",
                 "Address shared after RSVP (Hell's Kitchen)",
             ],
         },
