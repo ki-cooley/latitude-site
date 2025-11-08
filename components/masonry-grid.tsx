@@ -156,11 +156,11 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'How It Works',
             items: [
-                'Small drops, one to two dates a month',
+                'Small drops, once a month',
                 '<a href=https://lu.ma/latitude class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>; we email a soft-hold when seats open',
-                'Confirm within 24 hours or pass to the next guest',
+                'Meet new people, taste new flavors, hear new stories',
                 'Allergies and restrictions catered to; specify in RSVP',
-                'Price: $70–$100 per guest',
+                'Price: $60–$100 per guest including pairings',
             ],
         },
     },
