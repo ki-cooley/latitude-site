@@ -132,7 +132,7 @@ const masonryItems: MasonryItem[] = [
             alt: '',
             width: 320,
             height: 320,
-            caption: 'Kumamoto oyster, shiso',
+            caption: 'Blue point oyster, cucumber, coriander',
         },
     },
     // t08a — photo → IMG_0061.JPG (duck breast with sauce ring)
@@ -145,7 +145,7 @@ const masonryItems: MasonryItem[] = [
             alt: '',
             width: 320,
             height: 320,
-            caption: 'Duck breast, celery root, Armagnac',
+            caption: "Hudson valley's finest: foie gras au torchon, compressed apple, chicories",
         },
     },
     // t09 — content → how it works (later placement)
