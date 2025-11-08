@@ -2,9 +2,21 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-    title: 'Latitude — Seasonal Dinners In NYC',
+    title: 'Latitude — Food with a sense of place',
     description:
-        "An eight-seat supper club in Hell's Kitchen. Seasonal tasting menu; intimate table. Invitations go first to the list.",
+        "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+    openGraph: {
+        title: 'Latitude — Food with a sense of place',
+        description: "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+        images: ['/images/og-image.jpg'],
+        type: 'website',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Latitude — Food with a sense of place',
+        description: "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+        images: ['/images/og-image.jpg'],
+    },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

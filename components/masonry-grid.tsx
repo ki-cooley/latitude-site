@@ -122,17 +122,30 @@ const masonryItems: MasonryItem[] = [
                 "'Apricot and its imitators': preserved apricot, chanterelle, summer squash, and flounder",
         },
     },
-    // t08 — photo → IMG_2415.jpeg (lobster - now regular size)
+    // t08 — photo → IMG_3133.jpeg (oyster on ice)
     {
         id: 't08-photo',
         type: 'photo',
         width: 1,
         image: {
-            src: '/images/IMG_2415.jpeg',
+            src: '/images/IMG_3133.jpeg',
             alt: '',
             width: 320,
-            height: 380,
-            caption: "'The lifecycle of honey: Honey panna cotta, summer flowers, chocolate bee",
+            height: 320,
+            caption: 'Kumamoto oyster, shiso',
+        },
+    },
+    // t08a — photo → IMG_0061.JPG (duck breast with sauce ring)
+    {
+        id: 't08a-photo',
+        type: 'photo',
+        width: 1,
+        image: {
+            src: '/images/IMG_0061.JPG',
+            alt: '',
+            width: 320,
+            height: 320,
+            caption: 'Duck breast, celery root, Armagnac',
         },
     },
     // t09 — content → how it works (later placement)
