@@ -36,9 +36,9 @@ const masonryItems: MasonryItem[] = [
             height: 400,
         },
         content: {
-            title: 'INTIMATE DINING IN THE HEART OF MANHATTAN',
+            title: 'FOOD WITH A SENSE OF PLACE',
             subtitle: 'latitude',
-            items: ['a seasonal tasting-menu supper club.'],
+            items: ['a seasonal tasting-menu pop-up.'],
         },
     },
     // t02 — photo → IMG_2263.jpeg (artichoke - now regular size)
@@ -62,9 +62,9 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'Next Dinner',
             items: [
-                'Date: Saturday, October 11th, 2025',
-                'Theme: "Cusp of Autumn"',
-                'Interested? <a href="https://luma.com/qg4qlcxi" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
+                'Date: Saturday, November 22nd, 2025',
+                'Theme: "Common Ground"',
+                'Interested? <a href="https://luma.com/sjx2x743" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
             ],
         },
     },
@@ -103,7 +103,7 @@ const masonryItems: MasonryItem[] = [
             title: 'What To Expect',
             items: [
                 'Seasonal tasting, six to eight courses, meticulously paired wines',
-                "The nuance and refinement of restaurant cooking; the warmth and hospitality of a friend's dinner party",
+                "The creativity and refinement of fine dining meets the warmth and hospitality of a friend's dinner party",
                 "Address shared after RSVP (Hell's Kitchen)",
             ],
         },
