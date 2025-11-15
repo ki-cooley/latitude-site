@@ -4,7 +4,7 @@ import './globals.css';
 export const metadata: Metadata = {
     title: 'Latitude — Food with a sense of place',
     description:
-        "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+        "An eight-seat pop-up in NYC: fine dining finesse meets dinner party warmth.",
     openGraph: {
         title: 'Latitude — Food with a sense of place',
         description: "An eight-seat pop-up in NYC: fine dining finesse meets dinner party warmth.",
