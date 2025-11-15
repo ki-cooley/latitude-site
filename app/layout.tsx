@@ -7,14 +7,14 @@ export const metadata: Metadata = {
         "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
     openGraph: {
         title: 'Latitude — Food with a sense of place',
-        description: "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+        description: "An eight-seat pop-up in NYC: fine dining finesse meets dinner party warmth.",
         images: ['/images/og-image.jpg'],
         type: 'website',
     },
     twitter: {
         card: 'summary_large_image',
         title: 'Latitude — Food with a sense of place',
-        description: "An eight-seat supper club in NYC: fine dining finesse meets dinner party warmth.",
+        description: "An eight-seat pop-up in NYC: fine dining finesse meets dinner party warmth.",
         images: ['/images/og-image.jpg'],
     },
 };
