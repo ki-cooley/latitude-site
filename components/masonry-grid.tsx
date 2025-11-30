@@ -64,7 +64,7 @@ const masonryItems: MasonryItem[] = [
             items: [
                 'Date: Saturday, January 24th, 2026',
                 'Theme: "Flame & Frost"',
-                'Interested? <a href="https://luma.com/sjx2x743" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
+                'Interested? <a href="https://luma.com/uq0ufrh2" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
             ],
         },
     },
