@@ -5,7 +5,7 @@ export function Footer() {
                 <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     {/* Left side - Copyright and Location */}
                     <div className="flex flex-col items-center md:items-start gap-2">
-                        <p className="text-sm text-muted">© 2024 Latitude. All rights reserved.</p>
+                        <p className="text-sm text-muted">© 2026 Latitude. All rights reserved.</p>
                         <p className="text-sm text-muted">New York, NY</p>
                     </div>
 

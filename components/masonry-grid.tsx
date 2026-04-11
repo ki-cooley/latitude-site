@@ -62,9 +62,9 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'Next Dinner',
             items: [
-                'Date: Saturday, November 22nd, 2025',
-                'Theme: "Common Ground"',
-                'Interested? <a href="https://luma.com/sjx2x743" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
+                'Date: Saturday, May 16th, 2026',
+                'Theme: "Perennial"',
+                'Interested? <a href="https://lu.ma/latitude" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
             ],
         },
     },
@@ -81,17 +81,17 @@ const masonryItems: MasonryItem[] = [
             caption: "Artichoke 'flower', mint, peas",
         },
     },
-    // t05 — photo → IMG_2328.jpeg (plate rim - now regular photo)
+    // t05 — photo → truffle pigeon
     {
         id: 't05-photo',
         type: 'photo',
         width: 1,
         image: {
-            src: '/images/IMG_2328.jpeg',
+            src: '/images/truffle-pigeon.jpg',
             alt: '',
             width: 320,
-            height: 240, // sized down from 320
-            caption: 'Baby artichoke tartlet',
+            height: 320,
+            caption: 'Truffled squab, black winter truffle, sunchoke, kale',
         },
     },
     // t06 — content → what to expect (mid placement)
@@ -102,7 +102,7 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'What To Expect',
             items: [
-                'Seasonal tasting, six to eight courses, meticulously paired wines',
+                'Seasonal tasting, nine courses, meticulously paired wines',
                 "The creativity and refinement of fine dining meets the warmth and hospitality of a friend's dinner party",
                 "Address shared after RSVP (Hell's Kitchen)",
             ],
@@ -135,17 +135,17 @@ const masonryItems: MasonryItem[] = [
             caption: 'Blue point oyster, cucumber, coriander',
         },
     },
-    // t08a — photo → IMG_0061.JPG (duck breast with sauce ring)
+    // t08a — photo → squid ink risotto
     {
         id: 't08a-photo',
         type: 'photo',
         width: 1,
         image: {
-            src: '/images/IMG_0061.JPG',
+            src: '/images/squid-ink-risotto.jpg',
             alt: '',
             width: 320,
             height: 320,
-            caption: "Hudson valley's finest: foie gras au torchon, compressed apple, chicories",
+            caption: 'Lovecraftian risotto: cephalopods, black vinegar reduction, pickled fennel',
         },
     },
     // t09 — content → how it works (later placement)
@@ -156,15 +156,40 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'How It Works',
             items: [
-                'Small drops, once a month',
+                'A new seasonal menu every month',
                 '<a href=https://lu.ma/latitude class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>; we email a soft-hold when seats open',
-                'Meet new people, taste new flavors, hear new stories',
                 'Allergies and restrictions catered to; specify in RSVP',
-                'Price: $60–$100 per guest including pairings',
+                'Price: $140 per guest, nine courses with full wine or zero-proof pairing',
             ],
         },
     },
-    // t10 — rsvp (2-col) → final cta
+    // t10a — photo → chef in kitchen (experience section)
+    {
+        id: 't10a-experience-chef',
+        type: 'photo',
+        width: 1,
+        image: {
+            src: '/images/ki-piping-kitchen.jpg',
+            alt: '',
+            width: 320,
+            height: 380,
+            caption: 'The chef',
+        },
+    },
+    // t10b — photo → guests at table (experience section)
+    {
+        id: 't10b-experience-room',
+        type: 'photo',
+        width: 1,
+        image: {
+            src: '/images/guests-at-table.jpg',
+            alt: '',
+            width: 320,
+            height: 380,
+            caption: 'The dining room',
+        },
+    },
+    // t11 — rsvp (2-col) → final cta
     {
         id: 't10-rsvp',
         type: 'rsvp',
