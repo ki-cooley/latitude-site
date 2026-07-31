@@ -62,9 +62,9 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'Next Dinner',
             items: [
-                'Date: Saturday, May 16th, 2026',
-                'Theme: "Perennial"',
-                'Interested? <a href="https://lu.ma/latitude" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Join the list</a>',
+                'Date: Saturday, August 22nd, 2026',
+                'Theme: "Chromas", a summer day in 8 hues',
+                'Interested? <a href="https://luma.com/d46dp0u0" class="text-cobalt-blue hover:text-cobalt-blue/80 hover:bg-cobalt-blue/10 underline font-medium transition-all duration-200 px-1 py-0.5 rounded-sm">Reserve a seat</a>',
             ],
         },
     },
@@ -102,9 +102,9 @@ const masonryItems: MasonryItem[] = [
         content: {
             title: 'What To Expect',
             items: [
-                'Seasonal tasting, nine courses, meticulously paired wines',
+                'Seasonal tasting, eight courses, meticulously paired wines',
                 "The creativity and refinement of fine dining meets the warmth and hospitality of a friend's dinner party",
-                "Address shared after RSVP (Hell's Kitchen)",
+                'Address shared after RSVP (Murray Hill)',
             ],
         },
     },
