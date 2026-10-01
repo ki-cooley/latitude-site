@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" ><title>Latitude mark option C</title>
+<path fill="#1B1917" d="M 106.09,14.92 A 85.3,85.3 0 1,1 93.91,14.92 L 94.09,17.51 A 82.7,82.7 0 1,0 105.91,17.51 Z"/>
+<path fill="#1B1917" d="M 100,1 L 101.9,24 L 102.4,24 L 102.4,34 L 104,34 L 104,48 L 106.2,48 L 106.2,70 L 109,70 L 109,146 L 100,162 Z"/>
+<path fill="none" stroke="#1B1917" stroke-width="2.0" stroke-linejoin="miter" stroke-miterlimit="14" d="M 100,162 L 109,146 L 109,70 L 106.2,70 L 106.2,48 L 104,48 L 104,34 L 102.4,34 L 102.4,24 L 101.9,24 L 100,1 L 98.1,24 L 97.6,24 L 97.6,34 L 96,34 L 96,48 L 93.8,48 L 93.8,70 L 91,70 L 91,146 Z"/>
+</svg>

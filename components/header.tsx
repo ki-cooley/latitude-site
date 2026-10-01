@@ -14,18 +14,19 @@ export function Header() {
             style={{ backgroundColor: 'rgba(249, 247, 242, 0.8)' }}
         >
             <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-                {/* Left - Title */}
-                <div className="font-display text-2xl text-ink">
-                    latitude
-                    <span className="latitude-degree">°</span>
+                {/* Left - Lockup */}
+                <div className="flex items-center gap-3">
+                    <img
+                        src="/brand/latitude-mark-ink.svg"
+                        alt=""
+                        aria-hidden="true"
+                        className="h-8 w-8"
+                    />
+                    <div className="font-display text-2xl text-ink">
+                        latitude
+                        <span className="latitude-degree">°</span>
+                    </div>
                 </div>
-
-                {/* Center - Compass Logo */}
-                <img
-                    src="/images/compass-logo-5-small.svg"
-                    alt="Latitude compass logo"
-                    className="h-12 w-12 compass-rotate absolute left-1/2 transform -translate-x-1/2"
-                />
 
                 {/* Right - CTA */}
                 <button

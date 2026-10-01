@@ -60,10 +60,6 @@
         display: inline-block;
         animation: rotateToNorth 1200ms ease-out 800ms both;
     }
-    
-    .compass-rotate {
-        animation: compassSpin 2000ms ease-out 1200ms both;
-    }
 }
 
 @keyframes rotateToNorth {
@@ -72,24 +68,6 @@
     }
     to {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes compassSpin {
-    0% {
-        transform: rotate(0deg);
-    }
-    25% {
-        transform: rotate(42deg);
-    }
-    50% {
-        transform: rotate(48deg);
-    }
-    75% {
-        transform: rotate(45deg);
-    }
-    100% {
-        transform: rotate(0deg);
     }
 }
 
