@@ -17,7 +17,7 @@ export function Header() {
                 {/* Left - Lockup */}
                 <div className="flex items-center gap-3">
                     <img
-                        src="/brand/latitude-mark-ink.svg"
+                        src="/brand/latitude-mark-small-ink.svg"
                         alt=""
                         aria-hidden="true"
                         className="h-8 w-8"

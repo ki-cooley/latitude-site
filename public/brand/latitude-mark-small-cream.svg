@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200" ><title>Latitude mark, small cut (64 px and below)</title>
+<path fill="#F5F2EE" d="M 107.06,14.99 A 85.3,85.3 0 1,1 92.94,14.99 L 93.15,17.58 A 82.7,82.7 0 1,0 106.85,17.58 Z"/>
+<path fill="#F5F2EE" d="M 100,1 L 102.96,24 L 103.73,24 L 103.73,34 L 106.22,34 L 106.22,48 L 109.64,48 L 109.64,70 L 114,70 L 114,146 L 100,162 Z"/>
+<path fill="none" stroke="#F5F2EE" stroke-width="2.4" stroke-linejoin="miter" stroke-miterlimit="14" d="M 100,162 L 114,146 L 114,70 L 109.64,70 L 109.64,48 L 106.22,48 L 106.22,34 L 103.73,34 L 103.73,24 L 102.96,24 L 100,1 L 97.04,24 L 96.27,24 L 96.27,34 L 93.78,34 L 93.78,48 L 90.36,48 L 90.36,70 L 86,70 L 86,146 Z"/>
+</svg>
